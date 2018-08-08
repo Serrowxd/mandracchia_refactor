@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { NavContainer } from '../../reducer/styles';
+import { NavContainer, NavImage, NavCall } from '../../reducer/styles';
 
 import img from '../../assets/manlawhead.png';
 
@@ -45,12 +45,20 @@ class Navigation extends Component {
     const scrolled = this.state.scrolled;
     return (
       <NavContainer>
-        <img src={img} alt="manlaw" />
+        <NavImage>
+          <img src={img} alt="manlaw" />
+        </NavImage>
         <h1> Home </h1>
         <h1> About Us </h1>
         <h1> Attorney Profiles </h1>
         <h1> Areas of Practice </h1>
         <h1> Contact </h1>
+        <NavCall>
+          <h2>
+            {' '}
+            Call for Consultation <br /> 610-584-0700{' '}
+          </h2>
+        </NavCall>
       </NavContainer>
     );
   }

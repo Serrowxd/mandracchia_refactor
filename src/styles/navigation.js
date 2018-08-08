@@ -23,3 +23,16 @@ export const NavContainer = styled.div`
     font-weight: bold;
   }
 `;
+
+export const NavImage = styled.div`
+  align-self: center;
+`;
+
+export const NavCall = styled.div`
+  text-align: center;
+  color: white;
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+`;
