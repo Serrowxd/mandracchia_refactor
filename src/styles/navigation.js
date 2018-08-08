@@ -11,7 +11,7 @@ export const NavContainer = styled.div`
   padding-top: 1rem;
 
   /* Text */
-  color: white;
+  color: rgb(241, 179, 9);
 
   img {
     height: 8rem;
@@ -20,5 +20,6 @@ export const NavContainer = styled.div`
 
   h1 {
     font-size: 1.5rem;
+    font-weight: bold;
   }
 `;
