@@ -1,0 +1,24 @@
+import styled from 'styled-components';
+
+export const NavContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent !important;
+  position: absolute;
+  padding-top: 1rem;
+
+  /* Text */
+  color: white;
+
+  img {
+    height: 8rem;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+`;
