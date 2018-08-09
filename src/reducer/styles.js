@@ -6,6 +6,7 @@ import { GlobalContainer, GlobalGutter, Button } from '../styles/global';
 
 import {
   SectionContainer,
+  SectionContainerG,
   ContainerColumn,
   SectionContainerB,
   ContainerColumnB,
@@ -16,6 +17,8 @@ import {
   IndivSkillRow,
   IndivHeadshot,
   IndivHeadshotRow,
+  ContactSection,
+  ContactColumn,
 } from '../styles/mainpage';
 
 export {
@@ -33,6 +36,7 @@ export {
   Button,
   // Mainpage
   SectionContainer,
+  SectionContainerG,
   ContainerColumn,
   SectionContainerB,
   ContainerColumnB,
@@ -43,4 +47,6 @@ export {
   IndivSkillRow,
   IndivHeadshot,
   IndivHeadshotRow,
+  ContactSection,
+  ContactColumn,
 };

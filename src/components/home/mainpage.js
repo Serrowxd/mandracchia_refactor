@@ -2,6 +2,7 @@ import React from 'react';
 
 import {
   SectionContainer,
+  SectionContainerG,
   ContainerColumn,
   SectionContainerB,
   ContainerColumnB,
@@ -12,6 +13,8 @@ import {
   IndivSkillRow,
   IndivHeadshot,
   IndivHeadshotRow,
+  ContactSection,
+  ContactColumn,
   Button,
 } from '../../reducer/styles';
 
@@ -20,6 +23,7 @@ import img1 from '../../assets/newimgs/IMG_1958.JPG';
 import img2 from '../../assets/headshots/chrisprofile.jpg';
 import img3 from '../../assets/headshots/charlesprofile.jpg';
 import img4 from '../../assets/headshots/jeffprofile.jpg';
+import img5 from '../../assets/newimgs/IMG_1847.JPG';
 
 const MainPage = () => {
   return (
@@ -157,6 +161,24 @@ const MainPage = () => {
           </IndivHeadshotRow>
         </ContainerColumnB>
       </SectionContainerB>
+
+      <SectionContainerG>
+        <ContactSection>
+          <ContactColumn>
+            <img src={img5} alt="yeah" />
+          </ContactColumn>
+          <ContactColumn>
+            <h1> Contact Us </h1>
+            <p> We Will Fight For You </p>
+            <h3> Your Name </h3>
+            <input placeholder="Your Name" />
+            <h3> Your Email </h3>
+            <input placeholder="Your Email" />
+            <h3> Stuff </h3>
+            <textarea placeholder="Stuff" />
+          </ContactColumn>
+        </ContactSection>
+      </SectionContainerG>
     </div>
   );
 };

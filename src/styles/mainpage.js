@@ -31,9 +31,23 @@ export const SectionContainerB = styled.div`
   }
 `;
 
+export const SectionContainerG = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  /* Global Padding */
+  padding-right: 3%;
+  padding-left: 3%;
+
+  /* Background */
+  background-color: #daa520;
+`;
+
 export const ContainerColumn = styled.div`
   display: flex;
   flex-direction: column;
+  text-align: center;
   /* Temp Margin? */
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -74,7 +88,7 @@ export const HeaderContainerB = styled.div`
   align-self: center;
 
   h1 {
-    color: gold;
+    color: #daa520;
   }
 `;
 
@@ -129,4 +143,47 @@ export const IndivHeadshotRow = styled.div`
 
   width: 90rem;
   margin-top: 3rem;
+`;
+
+export const ContactSection = styled.div`
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  /* width: 60rem; */
+
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+`;
+
+export const ContactColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: white;
+
+  img {
+    width: 40rem;
+    margin-right: 3rem;
+  }
+
+  input {
+    width: 35rem;
+    height: 3rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  textarea {
+    width: 35rem;
+    height: 10rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
 `;
