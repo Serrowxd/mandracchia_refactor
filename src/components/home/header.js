@@ -16,13 +16,13 @@ const Header = () => {
         <h3> Looking For </h3>
         <h2> LEGAL </h2>
         <h2> REPRESENTATION </h2>
-        <h4> IN PENNSYLVANIA </h4>
+        <h4> IN PHILLIDELPHIA? </h4>
         <p>
           {' '}
           Mandracchia Law is a team of experienced trial attorneys and
           litigators. We handle Criminal Defense, Civil Litigation, Personal
           Injury, Real Estate, Family Law, Wills & Estates, Domestic Disputes,
-          etc.
+          and more.
         </p>
         <Button> Let us Fight for You! </Button>
       </HeadText>

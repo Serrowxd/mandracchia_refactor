@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { Navigation, Footer } from '../reducer/container';
-import { Header } from '../reducer/index.js';
+import { Header, MainPage } from '../reducer/index.js';
 
 // Styles
 import { GlobalContainer } from '../reducer/styles';
@@ -18,6 +18,7 @@ class Layout extends Component {
         <Navigation />
 
         <Header />
+        <MainPage />
 
         <Footer />
       </GlobalContainer>
