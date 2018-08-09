@@ -147,6 +147,8 @@ const MainPage = () => {
               <img src={img2} alt="yeah" />
               <h2> Chris Mandracchia </h2>
               <h4> Criminal Defense Expert </h4>
+
+              {/* Don't use different header tags - could also use a span tag to modify. Create a sub heading with a prop or a style prop? */}
             </IndivHeadshot>
             <IndivHeadshot>
               <img src={img3} alt="yeah" />

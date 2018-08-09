@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+// Refactor into classes to make simple modifications on Container(B) etc.
+
 export const SectionContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -119,6 +121,7 @@ export const IndivSkillRow = styled.div`
   text-align: center;
 `;
 
+// Just rename components to something simple.
 export const IndivHeadshot = styled.div`
   display: flex;
   flex-direction: column;

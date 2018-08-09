@@ -19,3 +19,38 @@
 ### Fonts:
 
 `font-family`: Segoe UI Light `!important` -- located in `index.css` // modifies `body`
+
+## Notes with Randall
+
+```JS
+import React from 'react';
+
+const Skill = (props) => (
+  <Fragment>
+    <h2>{props.title}</h2>
+    <p>{props.children}</p>
+  </Fragment>
+);
+
+export default Skill;
+```
+
+Fragments don't show up, they are just able to export functional components.
+
+```JS
+const add = (x, y) => x + y;
+
+(same as)
+
+const add = (x, y) => {
+  return x + y;
+};
+```
+
+Arrow Functions don't have `this` keywords, where as Functions do.
+
+`props.children` is whatever comes inside of the tags that it's being used on.
+
+So `<Skill title={title}> Children </Skill>` Children would be the props.children passing it in.
+
+**CREATE AN INDEX REDUCER THAT CONTAINS ALL THE OTHER REDUCERS**
