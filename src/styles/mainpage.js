@@ -117,6 +117,7 @@ export const IndivHeadshot = styled.div`
 
   img {
     border-radius: 60%;
+    margin-bottom: 2rem;
   }
 `;
 
@@ -125,4 +126,7 @@ export const IndivHeadshotRow = styled.div`
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
+
+  width: 90rem;
+  margin-top: 3rem;
 `;
