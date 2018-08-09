@@ -10,9 +10,12 @@ import {
   SectionContainerB,
   ContainerColumnB,
   HeaderContainer,
+  HeaderContainerB,
   SkillsContainer,
   IndivSkill,
   IndivSkillRow,
+  IndivHeadshot,
+  IndivHeadshotRow,
 } from '../styles/mainpage';
 
 export {
@@ -34,7 +37,10 @@ export {
   SectionContainerB,
   ContainerColumnB,
   HeaderContainer,
+  HeaderContainerB,
   SkillsContainer,
   IndivSkill,
   IndivSkillRow,
+  IndivHeadshot,
+  IndivHeadshotRow,
 };

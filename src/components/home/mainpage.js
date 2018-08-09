@@ -6,13 +6,20 @@ import {
   SectionContainerB,
   ContainerColumnB,
   HeaderContainer,
+  HeaderContainerB,
   SkillsContainer,
   IndivSkill,
   IndivSkillRow,
+  IndivHeadshot,
+  IndivHeadshotRow,
   Button,
 } from '../../reducer/styles';
 
 import img1 from '../../assets/newimgs/IMG_1958.JPG';
+
+import img2 from '../../assets/headshots/chrisprofile.jpg';
+import img3 from '../../assets/headshots/charlesprofile.jpg';
+import img4 from '../../assets/headshots/jeffprofile.jpg';
 
 const MainPage = () => {
   return (
@@ -125,6 +132,31 @@ const MainPage = () => {
           </SkillsContainer>
         </ContainerColumn>
       </SectionContainer>
+
+      <SectionContainerB>
+        <ContainerColumnB>
+          <HeaderContainerB>
+            <h1> Team Mandracchia </h1>
+          </HeaderContainerB>
+          <IndivHeadshotRow>
+            <IndivHeadshot>
+              <img src={img2} alt="yeah" />
+              <h2> Chris Mandracchia </h2>
+              <h4> Criminal Defense Expert </h4>
+            </IndivHeadshot>
+            <IndivHeadshot>
+              <img src={img3} alt="yeah" />
+              <h2> Charles Mandracchia </h2>
+              <h4> Personal Injury Expert </h4>
+            </IndivHeadshot>
+            <IndivHeadshot>
+              <img src={img4} alt="yeah" />
+              <h2> Jeff Soderberg </h2>
+              <h4> Civil Litigation Expert </h4>
+            </IndivHeadshot>
+          </IndivHeadshotRow>
+        </ContainerColumnB>
+      </SectionContainerB>
     </div>
   );
 };

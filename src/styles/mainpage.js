@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-const color = '#F8F9FA';
-
 export const SectionContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -12,17 +10,10 @@ export const SectionContainer = styled.div`
   padding-left: 3%;
 `;
 
-export const ContainerColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-// Black
-
 export const SectionContainerB = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 
   /* Global Padding */
   padding-right: 3%;
@@ -38,6 +29,14 @@ export const SectionContainerB = styled.div`
   p {
     font-size: 1.2rem;
   }
+`;
+
+export const ContainerColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  /* Temp Margin? */
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 `;
 
 export const ContainerColumnB = styled.div`
@@ -59,8 +58,6 @@ export const ContainerColumnB = styled.div`
 
 export const HeaderContainer = styled.div`
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
   align-self: center;
 
   h1 {
@@ -69,6 +66,15 @@ export const HeaderContainer = styled.div`
 
   p {
     font-size: 1.5rem;
+  }
+`;
+
+export const HeaderContainerB = styled.div`
+  text-align: center;
+  align-self: center;
+
+  h1 {
+    color: gold;
   }
 `;
 
@@ -93,6 +99,28 @@ export const IndivSkill = styled.div`
 `;
 
 export const IndivSkillRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+`;
+
+export const IndivHeadshot = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 35rem;
+
+  margin-right: 2rem;
+  margin-left: 2rem;
+
+  img {
+    border-radius: 60%;
+  }
+`;
+
+export const IndivHeadshotRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
