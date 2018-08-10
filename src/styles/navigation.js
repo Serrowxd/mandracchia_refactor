@@ -21,6 +21,12 @@ export const NavContainer = styled.div`
   h1 {
     font-size: 1.5rem;
     font-weight: bold;
+    transition: color 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      color: white;
+    }
   }
 `;
 

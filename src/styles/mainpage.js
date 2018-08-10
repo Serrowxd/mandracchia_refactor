@@ -7,68 +7,35 @@ export const SectionContainer = styled.div`
   flex-direction: row;
   justify-content: center;
 
-  /* Global Padding */
-  padding-right: 3%;
-  padding-left: 3%;
-`;
-
-export const SectionContainerB = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  background-color: ${props => props.background};
 
   /* Global Padding */
   padding-right: 3%;
   padding-left: 3%;
-
-  /* Background */
-  background-color: #212121 !important;
 
   h1 {
-    font-size: 3.5rem;
+    font-size: ${props => props.hFont};
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: ${props => props.pFont};
   }
-`;
-
-export const SectionContainerG = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  /* Global Padding */
-  padding-right: 3%;
-  padding-left: 3%;
-
-  /* Background */
-  background-color: #daa520;
 `;
 
 export const ContainerColumn = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: center;
-  /* Temp Margin? */
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-`;
-
-export const ContainerColumnB = styled.div`
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  color: white;
-
+  text-align: ${props => props.textAlign};
+  color: ${props => props.color};
   /* Temp Margin? */
   margin-top: 3rem;
   margin-bottom: 3rem;
 
   img {
-    width: 100%;
+    width: ${props => props.width}
     height: auto;
-    padding-left: 5%;
+    padding-left: ${props => props.paddingLeft};
   }
 `;
 
@@ -77,20 +44,11 @@ export const HeaderContainer = styled.div`
   align-self: center;
 
   h1 {
-    /* color: gold; */
+    color: ${props => props.color};
   }
 
   p {
     font-size: 1.5rem;
-  }
-`;
-
-export const HeaderContainerB = styled.div`
-  text-align: center;
-  align-self: center;
-
-  h1 {
-    color: #daa520;
   }
 `;
 
@@ -110,11 +68,11 @@ export const IndivSkill = styled.div`
   margin-left: 2rem;
 
   h1 {
-    /* color: gold; */
+    color: ${props => props.color};
   }
 `;
 
-export const IndivSkillRow = styled.div`
+export const SkillRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -122,7 +80,7 @@ export const IndivSkillRow = styled.div`
 `;
 
 // Just rename components to something simple.
-export const IndivHeadshot = styled.div`
+export const Headshot = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,12 +91,14 @@ export const IndivHeadshot = styled.div`
   margin-left: 2rem;
 
   img {
+    width: 100%;
+    height: auto;
     border-radius: 60%;
     margin-bottom: 2rem;
   }
 `;
 
-export const IndivHeadshotRow = styled.div`
+export const HeadshotRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
