@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Index from './containers/index';
+import Layout from './containers/layout';
+import { BrowserRouter, Route } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(<Index />, document.getElementById('root'));
+ReactDOM.render(
+  <BrowserRouter>
+    <Route path="/" component={Layout} />
+  </BrowserRouter>,
+  document.getElementById('root')
+);
 registerServiceWorker();

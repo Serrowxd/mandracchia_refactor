@@ -4,6 +4,8 @@ import { HeadContainer, HeadText, HeadImage } from '../styles/header';
 
 import { GlobalContainer, GlobalGutter, Button } from '../styles/global';
 
+import FootContainer from '../styles/footer';
+
 import {
   SectionContainer,
   ContainerColumn,
@@ -41,4 +43,6 @@ export {
   HeadshotRow,
   ContactSection,
   ContactColumn,
+  // Footer
+  FootContainer,
 };

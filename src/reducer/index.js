@@ -23,6 +23,7 @@ import {
   HeadshotRow,
   ContactSection,
   ContactColumn,
+  FootContainer,
 } from './styles';
 
 // Export all components here
@@ -54,4 +55,5 @@ export {
   HeadshotRow,
   ContactSection,
   ContactColumn,
+  FootContainer,
 };
