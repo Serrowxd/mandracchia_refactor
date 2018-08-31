@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import { NavContainer, NavImage, NavCall } from '../../reducer/styles';
+import { NavContainer, NavImage, NavCall } from '../styles/styles';
 
-import img from '../../assets/manlawhead.png';
+import img from '../assets/manlawhead.png';
 
 class Navigation extends Component {
   constructor(props) {

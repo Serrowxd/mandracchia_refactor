@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Headshot } from '../../reducer';
+import { Headshot } from '../../styles/styles';
 
 const Head = props => (
   <Headshot>

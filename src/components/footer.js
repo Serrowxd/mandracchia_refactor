@@ -1,6 +1,6 @@
 import React from 'react';
 
-import FootContainer from '../../reducer';
+import { FootContainer } from '../styles/styles';
 
 const Footer = () => {
   return (

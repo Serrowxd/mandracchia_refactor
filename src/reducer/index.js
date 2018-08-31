@@ -1,59 +1,15 @@
 // All imports for components here
-import { Header, Skill, Head } from './components';
 
-import { MainPage, About, Navigation, Footer } from './container';
+import Navigation from '../components/Nav';
+import Footer from '../components/footer';
 
-import {
-  NavContainer,
-  NavImage,
-  NavCall,
-  HeadContainer,
-  HeadText,
-  HeadImage,
-  GlobalContainer,
-  GlobalGutter,
-  Button,
-  SectionContainer,
-  ContainerColumn,
-  HeaderContainer,
-  SkillsContainer,
-  IndivSkill,
-  SkillRow,
-  Headshot,
-  HeadshotRow,
-  ContactSection,
-  ContactColumn,
-  FootContainer,
-} from './styles';
+import MainPage from '../containers/mainpage';
+import About from '../containers/about';
+
+import Header from '../components/home/header';
+import Skill from '../components/home/skill';
+import Head from '../components/home/head';
 
 // Export all components here
 
-export {
-  Header,
-  MainPage,
-  Skill,
-  About,
-  Head,
-  Navigation,
-  Footer,
-  NavContainer,
-  NavImage,
-  NavCall,
-  HeadContainer,
-  HeadText,
-  HeadImage,
-  GlobalContainer,
-  GlobalGutter,
-  Button,
-  SectionContainer,
-  ContainerColumn,
-  HeaderContainer,
-  SkillsContainer,
-  IndivSkill,
-  SkillRow,
-  Headshot,
-  HeadshotRow,
-  ContactSection,
-  ContactColumn,
-  FootContainer,
-};
+export { Header, Skill, Head, MainPage, About, Navigation, Footer };

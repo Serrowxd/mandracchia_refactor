@@ -2,18 +2,16 @@ import React, { Component } from 'react';
 
 import { Route, Switch } from 'react-router-dom';
 
-import img from '../assets/manlawhead.png';
+import { MainPage, About, Footer } from '../reducer';
 
 import {
+  GlobalContainer,
   NavContainer,
   NavImage,
   NavCall,
-  Footer,
-  GlobalContainer,
-  MainPage,
-} from '../reducer';
+} from '../styles/styles';
 
-import About from '../components/about/About';
+import img from '../assets/manlawhead.png';
 
 class Layout extends Component {
   render() {

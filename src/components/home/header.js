@@ -5,7 +5,7 @@ import {
   HeadText,
   HeadImage,
   Button,
-} from '../../reducer/styles';
+} from '../../styles/styles';
 
 import img from '../../assets/lawyerimgs/MainPageChrisCharles.png';
 

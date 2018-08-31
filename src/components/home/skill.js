@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IndivSkill } from '../../reducer';
+import { IndivSkill } from '../../styles/styles';
 
 const Skill = props => (
   <IndivSkill>

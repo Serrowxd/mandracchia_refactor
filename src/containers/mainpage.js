@@ -1,18 +1,17 @@
 import React, { Fragment } from 'react';
 
+import { Header, Skill, Head, About, Navigation, Footer } from '../reducer';
+
 import {
   SectionContainer,
   ContainerColumn,
   HeaderContainer,
   SkillsContainer,
-  Header,
+  Button,
   HeadshotRow,
   ContactSection,
   ContactColumn,
-  Button,
-  Skill,
-  Head,
-} from '../reducer';
+} from '../styles/styles';
 
 import img1 from '../assets/newimgs/IMG_1958.JPG';
 

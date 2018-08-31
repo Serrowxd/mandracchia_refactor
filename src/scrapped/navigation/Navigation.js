@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { NavContainer } from '../../reducer/styles';
+import { NavContainer } from '../../styles/styles';
 
 class Navigation extends Component {
   constructor(props) {
