@@ -41,6 +41,8 @@ class Navigation extends Component {
     this.setState({ scrolled: true });
   }
 
+  // Scroll is not used at the moment
+
   render() {
     const scrolled = this.state.scrolled;
     return (

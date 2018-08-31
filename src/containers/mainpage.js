@@ -14,11 +14,9 @@ import {
 } from '../styles/styles';
 
 import img1 from '../assets/newimgs/IMG_1958.JPG';
-
 import img2 from '../assets/headshots/chrisprofile.jpg';
 import img3 from '../assets/headshots/charlesprofile.jpg';
 import img4 from '../assets/headshots/jeffprofile.jpg';
-
 import img5 from '../assets/newimgs/IMG_1847.JPG';
 
 const MainPage = () => {
@@ -51,7 +49,7 @@ const MainPage = () => {
         </ContainerColumn>
       </SectionContainer>
 
-      <SectionContainer>
+      <SectionContainer background="white">
         <ContainerColumn>
           <HeaderContainer color={gold}>
             <h1> Areas Of Practice </h1>

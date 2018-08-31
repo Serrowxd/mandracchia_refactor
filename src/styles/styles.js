@@ -7,12 +7,18 @@ import imgbkg from '../assets/unnamed30opacnorm.png';
 
 export const GlobalContainer = styled.div`
   font-family: Segoe UI Light !important;
+  background-color: #212121;
+  min-height: 100vh;
 `;
 
 export const GlobalGutter = styled.div`
   display: flex;
   padding-left: 5%;
   padding-right: 5%;
+`;
+
+export const MainContainer = styled.div`
+  padding-top: 10rem;
 `;
 
 export const Button = styled.button`
@@ -22,6 +28,7 @@ export const Button = styled.button`
   background-color: rgb(241, 179, 9);
   color: white;
   border: none;
+  outline: none;
 
   background-position: center;
   transition: background 0.8s;
@@ -60,10 +67,16 @@ export const NavContainer = styled.div`
     width: auto;
   }
 
+  a {
+    text-decoration: none !important;
+  }
+
   h1 {
     font-size: 1.5rem;
     font-weight: bold;
     transition: color 0.3s ease;
+    text-decoration: none;
+    color: rgb(241, 179, 9);
 
     &:hover {
       cursor: pointer;

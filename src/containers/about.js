@@ -1,10 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import { MainContainer } from '../styles/styles';
 
 const About = () => {
   return (
-    <Fragment>
+    <MainContainer>
       <h1> OwO </h1>
-    </Fragment>
+    </MainContainer>
   );
 };
 

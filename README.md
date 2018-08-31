@@ -6,6 +6,14 @@
 
 ### Additional Front-End </> - `Jared Cooper`
 
+## TODO
+
+- Footer
+- Secondary Pages
+- Connect Routes
+- Reactive Layout (LESS?)
+- Refactor some old code
+
 ### Colors:
 
 #### Backgrounds
