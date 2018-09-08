@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Route, Switch } from 'react-router-dom';
 
-import { MainPage, About, Footer } from '../reducer';
+import { MainPage, About, Footer, Attprof } from '../reducer';
 
 import {
   GlobalContainer,
@@ -27,7 +27,9 @@ class Layout extends Component {
           <a href="/aboutus">
             <h1>About Us</h1>
           </a>
-          <h1>Attorney Profiles</h1>
+          <a href="/attprof">
+            <h1>Attorney Profiles</h1>
+          </a>
           <h1>Areas of Practice</h1>
           <h1>Contact</h1>
           <NavCall>
@@ -40,6 +42,7 @@ class Layout extends Component {
         <Switch>
           <Route path="/" exact component={MainPage} />
           <Route path="/aboutus" exact component={About} />
+          <Route path="/attprof" exact component={Attprof} />
         </Switch>
 
         <Footer />

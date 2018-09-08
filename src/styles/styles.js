@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import imgbkg from '../assets/unnamed30opacnorm.png';
 
 // ****
@@ -43,6 +43,130 @@ export const Button = styled.button`
     background-size: 100%;
     transition: background 0s;
   }
+`;
+
+export const Row = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+
+  ${props =>
+    props.attprofmain &&
+    css`
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 5rem;
+      margin-bottom: 10rem;
+
+      img {
+        height: auto;
+        width: 400px;
+      }
+    `};
+`;
+
+export const Column = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  ${props =>
+    props.attprofmain &&
+    css`
+      align-items: center;
+      height: 70vh;
+      justify-content: space-evenly;
+      margin-top: 5rem;
+    `};
+`;
+
+// ****
+// Header
+// ****
+
+export const HeadContainer = styled.div`
+  height: 100vh;
+  width: 100%;
+  padding-top: 10rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* Background Image */
+  background-color: rgb(24, 24, 24) !important;
+  background-image: url(${imgbkg});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130rem;
+  background-attachment: fixed;
+`;
+
+export const HeadText = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+
+  /* GLobal Padding */
+  padding-left: 3%;
+
+  h2,
+  h3,
+  h4,
+  p {
+    color: white;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 6rem;
+  }
+
+  h4 {
+    font-size: 4rem;
+  }
+
+  p {
+    padding-top: 10%;
+    font-size: 1.25rem;
+    margin-bottom: 10%;
+  }
+`;
+
+export const HeadImage = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* Global Padding */
+  padding-right: 3%;
+
+  img {
+    width: auto;
+    height: 49rem;
+  }
+`;
+
+// ****
+// Footer
+// ****
+
+export const FootContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: ${props => props.background};
+  color: white;
+  align-items: center;
+
+  padding-right: 3%;
+  padding-left: 3%;
 `;
 
 // ****
@@ -251,89 +375,4 @@ export const ContactColumn = styled.div`
     font-weight: bold;
     margin-bottom: 1rem;
   }
-`;
-
-// ****
-// Header
-// ****
-
-export const HeadContainer = styled.div`
-  height: 100vh;
-  width: 100%;
-  padding-top: 10rem;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  /* Background Image */
-  background-color: rgb(24, 24, 24) !important;
-  background-image: url(${imgbkg});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 130rem;
-  background-attachment: fixed;
-`;
-
-export const HeadText = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-
-  /* GLobal Padding */
-  padding-left: 3%;
-
-  h2,
-  h3,
-  h4,
-  p {
-    color: white;
-    font-weight: bold;
-  }
-
-  h3 {
-    font-size: 5rem;
-  }
-
-  h2 {
-    font-size: 6rem;
-  }
-
-  h4 {
-    font-size: 4rem;
-  }
-
-  p {
-    padding-top: 10%;
-    font-size: 1.25rem;
-    margin-bottom: 10%;
-  }
-`;
-
-export const HeadImage = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  /* Global Padding */
-  padding-right: 3%;
-
-  img {
-    width: auto;
-    height: 49rem;
-  }
-`;
-
-// ****
-// Footer
-// ****
-
-export const FootContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: ${props => props.background};
-
-  padding-right: 3%;
-  padding-left: 3%;
 `;

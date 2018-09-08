@@ -5,7 +5,7 @@ import { FootContainer } from '../styles/styles';
 const Footer = () => {
   return (
     <FootContainer>
-      <h1> Henlo (OvO") </h1>
+      <p> Copyright 2018 Mandracchia Law </p>
     </FootContainer>
   );
 };
