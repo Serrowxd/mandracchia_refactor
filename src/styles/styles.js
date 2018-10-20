@@ -62,7 +62,7 @@ export const Row = styled.div`
     css`
       align-items: center;
       justify-content: space-evenly;
-      margin-top: 5rem;
+      margin-top: 3rem;
       margin-bottom: 10rem;
 
       img {
@@ -127,7 +127,7 @@ export const Column = styled.div`
       align-items: center;
       height: 70vh;
       justify-content: space-evenly;
-      margin-top: 5rem;
+      margin-top: 7rem;
     `};
 
   ${props =>
@@ -484,10 +484,22 @@ export const AttContainer = styled.div`
   position: relative;
   overflow: hidden;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+
+    h1 {
+      color: ${text};
+    }
+  }
   img {
     width: auto;
     height: 30rem;
+  }
+  h1 {
+    transition: 0.5s;
+    margin-top: 1rem;
   }
 `;

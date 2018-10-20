@@ -1,11 +1,11 @@
-import React from 'react';
-import { MainContainer, Row, Column } from '../../styles/styles';
+import React, { Fragment } from 'react';
+import { Row, Column } from '../../styles/styles';
 
 import charles from '../../assets/lawyerimgs/Mandracchia_0091.jpg';
 
 const Charles = () => {
   return (
-    <MainContainer>
+    <Fragment>
       <Column>
         <Row attpersonal>
           <Column attpersonal width="60%">
@@ -92,7 +92,7 @@ const Charles = () => {
           </Column>
         </Row>
       </Column>
-    </MainContainer>
+    </Fragment>
   );
 };
 

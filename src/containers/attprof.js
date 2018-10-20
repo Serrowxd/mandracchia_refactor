@@ -1,42 +1,37 @@
 import React, { Component } from 'react';
-import { MainContainer, Row, Column, AttContainer } from '../styles/styles';
-
-import charles from '../assets/lawyerimgs/Mandracchia_0091.jpg';
-import chris from '../assets/headshots/unnamednew.jpg';
-import jeff from '../assets/lawyerimgs/Soderberg_0107.jpg';
+import { MainContainer } from '../styles/styles';
+import { Holder, Charles, Chris, Jeff } from '../reducer';
 
 class Attprof extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      comp: null,
+      comp: (
+        <Holder
+          handler1={this.handleClick1}
+          handler2={this.handleClick2}
+          handler3={this.handleClick3}
+        />
+      ),
     };
   }
 
-  handleClick(compName, e) {
-    this.setState({ comp: compName });
-  }
+  handleClick1 = e => {
+    this.setState({ comp: <Charles /> });
+  };
+
+  handleClick2 = e => {
+    this.setState({ comp: <Chris /> });
+  };
+
+  handleClick3 = e => {
+    this.setState({ comp: <Jeff /> });
+  };
+
+  // Children are rendered on Click
 
   render() {
-    return (
-      <MainContainer>
-        <Column attprofmain>
-          <h1>Pennsylvania Legal Representation</h1>
-          <h2>We fight for you!</h2>
-          <Row attprofmain>
-            <AttContainer>
-              <img src={charles} alt="charles" class="img" />
-            </AttContainer>
-            <AttContainer>
-              <img src={chris} alt="charles" class="img" />
-            </AttContainer>
-            <AttContainer>
-              <img src={jeff} alt="charles" class="img" />
-            </AttContainer>
-          </Row>
-        </Column>
-      </MainContainer>
-    );
+    return <MainContainer>{this.state.comp}</MainContainer>;
   }
 }
 
