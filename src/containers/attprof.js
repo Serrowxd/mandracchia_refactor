@@ -40,4 +40,6 @@ class Attprof extends Component {
   }
 }
 
+// OnClick should set the component rendered by state to the clicked image of the Attorney
+
 export default Attprof;

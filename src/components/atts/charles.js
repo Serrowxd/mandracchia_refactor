@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
-import { MainContainer, Row, Column, AttContainer } from '../styles/styles';
+import React from 'react';
+import { MainContainer, Row, Column } from '../../styles/styles';
 
-import charles from '../assets/lawyerimgs/Mandracchia_0091.jpg';
-import chris from '../assets/headshots/unnamednew.jpg';
-import jeff from '../assets/lawyerimgs/Soderberg_0107.jpg';
+import charles from '../../assets/lawyerimgs/Mandracchia_0091.jpg';
 
-const Atts = () => {
+const Charles = () => {
   return (
     <MainContainer>
       <Column>
@@ -98,4 +96,4 @@ const Atts = () => {
   );
 };
 
-export default Atts;
+export default Charles;
