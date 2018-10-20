@@ -143,13 +143,14 @@ export const HeadImage = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 
   /* Global Padding */
   padding-right: 3%;
 
   img {
     width: auto;
-    height: 49rem;
+    height: 52rem;
   }
 `;
 
