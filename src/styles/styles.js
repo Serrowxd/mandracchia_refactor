@@ -113,6 +113,22 @@ export const Row = styled.div`
         font-size: 1.2rem;
       }
     `};
+
+  ${props =>
+    props.aboutus &&
+    css`
+      margin-top: 5rem;
+      /* width: 95%; */
+      img {
+        margin-left: 10rem;
+        height: 20rem;
+        width: auto;
+      }
+      p {
+        margin-left: 2rem !important;
+        font-size: 1.2rem;
+      }
+    `};
 `;
 
 export const Column = styled.div`
@@ -145,6 +161,19 @@ export const Column = styled.div`
 
       h1 {
         font-size: 6rem;
+      }
+    `};
+
+  ${props =>
+    props.aboutus &&
+    css`
+      width: 95%;
+      h1 {
+        text-align: center;
+      }
+      p {
+        font-size: 1.2rem;
+        margin-left: 10rem;
       }
     `};
 `;
