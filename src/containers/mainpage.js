@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react';
-
 import { Header, Skill, Head, About, Navigation, Footer } from '../reducer';
+import Button from '@material-ui/core/Button';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
+import amber from '@material-ui/core/colors/amber';
 
 import {
   SectionContainer,
   ContainerColumn,
   HeaderContainer,
   SkillsContainer,
-  Button,
   HeadshotRow,
   ContactSection,
   ContactColumn,
@@ -20,6 +21,11 @@ import img4 from '../assets/headshots/jeffprofile.jpg';
 import img5 from '../assets/newimgs/IMG_1847.JPG';
 
 const MainPage = () => {
+  const theme = createMuiTheme({
+    palette: {
+      primary: amber,
+    },
+  });
   const black = '#212121';
   const gold = '#daa520';
   return (
@@ -55,16 +61,15 @@ const MainPage = () => {
             <h1> Areas Of Practice </h1>
             <p>
               With experience comes excellence, here at Mandracchia Law we
-              covers many different areas.{' '}
+              covers many different areas.
             </p>
           </HeaderContainer>
           <SkillsContainer>
             <Skill title="Civil Litigation">
-              {' '}
               If you need to file a lawsuit and don’t know how, you may want to
               consult with a civil litigation attorney. Going through a lawsuit
               can be a complicated process and qualified lawyer’s guidance can
-              come in handy.{' '}
+              come in handy.
             </Skill>
             <Skill title="Traffic Matters">
               If you get a speeding ticket, or are stopped for reckless driving
@@ -110,7 +115,11 @@ const MainPage = () => {
             <Skill title="And many more...">
               To see a complete list of areas we cover click on the button
               below!
-              <Button> Areas of Practice </Button>
+              <MuiThemeProvider theme={theme}>
+                <Button variant="contained" color="primary">
+                  Areas of Practice
+                </Button>
+              </MuiThemeProvider>
             </Skill>
           </SkillsContainer>
         </ContainerColumn>

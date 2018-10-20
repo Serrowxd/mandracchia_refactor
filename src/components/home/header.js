@@ -1,15 +1,26 @@
 import React from 'react';
 
-import {
-  HeadContainer,
-  HeadText,
-  HeadImage,
-  Button,
-} from '../../styles/styles';
+import { HeadContainer, HeadText, HeadImage } from '../../styles/styles';
+
+import Button from '@material-ui/core/Button';
+import amber from '@material-ui/core/colors/amber';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 
 import img from '../../assets/lawyerimgs/MainPageChrisCharles.png';
 
 const Header = () => {
+  const theme = createMuiTheme({
+    palette: {
+      primary: amber,
+    },
+    overrides: {
+      MuiButton: {
+        raisedPrimary: {
+          color: 'white',
+        },
+      },
+    },
+  });
   return (
     <HeadContainer>
       <HeadText>
@@ -24,7 +35,11 @@ const Header = () => {
           Injury, Real Estate, Family Law, Wills & Estates, Domestic Disputes,
           and more.
         </p>
-        <Button> Let us Fight for You! </Button>
+        <MuiThemeProvider theme={theme}>
+          <Button variant="contained" color="primary">
+            Let us fight for you!
+          </Button>
+        </MuiThemeProvider>
       </HeadText>
       <HeadImage>
         <img src={img} alt="mandracchia" />

@@ -109,6 +109,13 @@ export const HeadText = styled.div`
   flex-direction: column;
   width: 35%;
 
+  button {
+    font-size: 2rem;
+    &:focus {
+      outline: none;
+    }
+  }
+
   /* GLobal Padding */
   padding-left: 3%;
 
@@ -282,6 +289,16 @@ export const HeaderContainer = styled.div`
 export const SkillsContainer = styled.div`
   display: flex;
   flex-direction: row;
+
+  button {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
 `;
 
 export const IndivSkill = styled.div`
