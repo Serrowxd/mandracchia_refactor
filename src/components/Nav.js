@@ -57,8 +57,7 @@ class Navigation extends Component {
         <h1> Contact </h1>
         <NavCall>
           <h2>
-            {' '}
-            Call for Consultation <br /> 610-584-0700{' '}
+            Call for Consultation <br /> 610-584-0700
           </h2>
         </NavCall>
       </NavContainer>
