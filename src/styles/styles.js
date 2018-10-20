@@ -5,6 +5,12 @@ import imgbkg from '../assets/unnamed30opacnorm.png';
 // Global
 // ****
 
+const colors = {
+  text: 'rgb(241, 179, 9)',
+};
+
+const { text } = colors;
+
 export const GlobalContainer = styled.div`
   font-family: Segoe UI Light !important;
   background-color: #212121;
@@ -25,7 +31,7 @@ export const Button = styled.button`
   width: 30rem;
   height: 4rem;
   font-size: 2rem;
-  background-color: rgb(241, 179, 9);
+  background-color: ${text};
   color: white;
   border: none;
   outline: none;
@@ -35,7 +41,7 @@ export const Button = styled.button`
 
   &:hover {
     background: rgb(241, 198, 9)
-      radial-gradient(circle, transparent 1%, rgb(241, 179, 9) 1%) center/15000%;
+      radial-gradient(circle, transparent 1%, ${text} 1%) center/15000%;
   }
 
   &:active {
@@ -64,6 +70,49 @@ export const Row = styled.div`
         width: 400px;
       }
     `};
+
+  ${props =>
+    props.attpersonal &&
+    css`
+      justify-content: space-around;
+      width: ${props => props.width};
+      p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+      }
+      span {
+        font-weight: bold;
+      }
+    `};
+
+  ${props =>
+    props.attbio &&
+    css`
+      margin-top: 3rem;
+      width: 95%;
+      p {
+        font-size: 1.2rem;
+        margin-left: 10rem;
+      }
+    `};
+
+  ${props =>
+    props.attbiobot &&
+    css`
+      margin-top: 3rem;
+      justify-content: space-around;
+      text-align: center;
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: ${text};
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    `};
 `;
 
 export const Column = styled.div`
@@ -79,6 +128,24 @@ export const Column = styled.div`
       height: 70vh;
       justify-content: space-evenly;
       margin-top: 5rem;
+    `};
+
+  ${props =>
+    props.attpersonal &&
+    css`
+      width: ${props => props.width};
+      justify-content: center;
+      margin-top: 5rem;
+
+      img {
+        width: 25rem;
+        height: auto;
+        margin-left: 10rem;
+      }
+
+      h1 {
+        font-size: 6rem;
+      }
     `};
 `;
 
@@ -192,7 +259,7 @@ export const NavContainer = styled.div`
   padding-top: 1rem;
 
   /* Text */
-  color: rgb(241, 179, 9);
+  color: ${text};
 
   img {
     height: 8rem;
@@ -208,7 +275,7 @@ export const NavContainer = styled.div`
     font-weight: bold;
     transition: color 0.3s ease;
     text-decoration: none;
-    color: rgb(241, 179, 9);
+    color: ${text};
 
     &:hover {
       cursor: pointer;

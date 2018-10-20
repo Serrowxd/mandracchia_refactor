@@ -117,7 +117,7 @@ const MainPage = () => {
               To see a complete list of areas we cover click on the button
               below!
               <MuiThemeProvider theme={theme}>
-                <Button variant="contained" color="primary">
+                <Button variant="contained" color="primary" href="/aop">
                   Areas of Practice
                 </Button>
               </MuiThemeProvider>

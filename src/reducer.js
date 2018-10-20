@@ -11,6 +11,18 @@ import Header from './components/home/header';
 import Skill from './components/home/skill';
 import Head from './components/home/head';
 
+import Atts from './components/atts';
+
 // Export all components here
 
-export { Header, Skill, Head, MainPage, Attprof, About, Navigation, Footer };
+export {
+  Header,
+  Skill,
+  Head,
+  MainPage,
+  Attprof,
+  About,
+  Navigation,
+  Footer,
+  Atts,
+};
