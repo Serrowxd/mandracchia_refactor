@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { MainContainer, Row, Column } from '../styles/styles';
+import { MainContainer, Row, Column, AttContainer } from '../styles/styles';
 
-import charles from '../assets/headshots/charlesprofile.jpg';
+import charles from '../assets/lawyerimgs/Mandracchia_0091.jpg';
 import chris from '../assets/headshots/unnamednew.jpg';
-import jeff from '../assets/headshots/jeffprofile.jpg';
+import jeff from '../assets/lawyerimgs/Soderberg_0107.jpg';
 
 class Attprof extends Component {
   constructor(props) {
@@ -24,9 +24,15 @@ class Attprof extends Component {
           <h1>Pennsylvania Legal Representation</h1>
           <h2>We fight for you!</h2>
           <Row attprofmain>
-            <img src={charles} alt="charles" class="img" />
-            <img src={chris} alt="charles" class="img" />
-            <img src={jeff} alt="charles" class="img" />
+            <AttContainer>
+              <img src={charles} alt="charles" class="img" />
+            </AttContainer>
+            <AttContainer>
+              <img src={chris} alt="charles" class="img" />
+            </AttContainer>
+            <AttContainer>
+              <img src={jeff} alt="charles" class="img" />
+            </AttContainer>
           </Row>
         </Column>
       </MainContainer>

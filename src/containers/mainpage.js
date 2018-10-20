@@ -26,6 +26,7 @@ const MainPage = () => {
       primary: amber,
     },
   });
+
   const black = '#212121';
   const gold = '#daa520';
   return (
@@ -159,6 +160,13 @@ const MainPage = () => {
             <input placeholder="Your Email" />
             <h3> Stuff </h3>
             <textarea placeholder="Stuff" />
+
+            {/* Needs a Submit Button, possibly a different color?? */}
+            <MuiThemeProvider theme={theme}>
+              <Button variant="contained" color="primary" type="submit">
+                Submit
+              </Button>
+            </MuiThemeProvider>
           </ContactColumn>
         </ContactSection>
       </SectionContainer>

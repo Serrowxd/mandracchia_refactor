@@ -4,7 +4,7 @@
 
 ### Front-End Design & </> - `Kevin Jolley`
 
-### Additional Front-End </> - `Jared Cooper`
+### Back-End Auth & </> - `Jared Cooper`
 
 ## TODO
 
@@ -13,6 +13,7 @@
 - Connect Routes
 - Reactive Layout (LESS?)
 - Refactor some old code
+- Contact Field will need to take in inputs ~ Axios?
 
 ### Colors:
 

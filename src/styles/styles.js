@@ -366,8 +366,21 @@ export const ContactColumn = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* color: white; */
 
-  color: white;
+  button {
+    font-size: 1rem;
+    background-color: white;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  h1,
+  p {
+    text-align: center;
+    font-weight: bold;
+  }
 
   img {
     width: 40rem;
@@ -392,5 +405,22 @@ export const ContactColumn = styled.div`
     padding: 1rem;
     font-weight: bold;
     margin-bottom: 1rem;
+  }
+`;
+
+// ****
+// AttProf
+// ****
+
+export const AttContainer = styled.div`
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  img {
+    width: auto;
+    height: 30rem;
   }
 `;
