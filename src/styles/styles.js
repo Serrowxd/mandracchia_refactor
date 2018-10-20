@@ -169,6 +169,7 @@ export const Column = styled.div`
     css`
       width: 95%;
       h1 {
+        margin-left: 10rem;
         text-align: center;
       }
       p {

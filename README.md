@@ -14,6 +14,7 @@
 - Reactive Layout (LESS?)
 - Refactor some old code
 - Contact Field will need to take in inputs ~ Axios?
+- Global Gutter needs to be implemented somehow to handle the gap on the sides - currently 10rem.
 
 ### Colors:
 

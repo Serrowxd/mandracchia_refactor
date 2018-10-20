@@ -9,7 +9,7 @@ const Chris = () => {
       <Column>
         <Row attpersonal>
           <Column attpersonal width="60%">
-            <img src={chris} />
+            <img src={chris} alt="chris" />
           </Column>
           <Column attpersonal>
             <h1> Christopher D. Mandracchia </h1>
