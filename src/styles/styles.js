@@ -25,6 +25,8 @@ export const GlobalGutter = styled.div`
 
 export const MainContainer = styled.div`
   padding-top: 10rem;
+
+  color: ${props => props.color};
 `;
 
 export const Button = styled.button`
@@ -176,6 +178,12 @@ export const Column = styled.div`
         font-size: 1.2rem;
         margin-left: 10rem;
       }
+    `};
+
+  ${props =>
+    props.aopnav &&
+    css`
+      color: white;
     `};
 `;
 
